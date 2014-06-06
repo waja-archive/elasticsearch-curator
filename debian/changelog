@@ -1,4 +1,4 @@
-elasticsearch-curator (1.0.1~dev20140606-1~1.gbp8fcb31) unstable; urgency=medium
+elasticsearch-curator (1.0.1~dev20140606-1) unstable; urgency=medium
 
   * source package automatically created by stdeb 0.6.0+git
   * Update Standards to 3.9.5
@@ -6,5 +6,6 @@ elasticsearch-curator (1.0.1~dev20140606-1~1.gbp8fcb31) unstable; urgency=medium
   * Adjust Description
   * Add debian/copyright
   * [8fcb315] Add Vcs-headers
+  * [2684089] Add python-pkg-resources to depends
 
- -- Jan Wagner <waja@cyconet.org>  Fri, 06 Jun 2014 12:27:51 +0200
+ -- Jan Wagner <waja@cyconet.org>  Fri, 06 Jun 2014 15:01:22 +0200
