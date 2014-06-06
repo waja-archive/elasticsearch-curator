@@ -1,9 +1,10 @@
-elasticsearch-curator (1.0.1~dev20140606-1) unstable; urgency=low
+elasticsearch-curator (1.0.1~dev20140606-1~1.gbp8fcb31) unstable; urgency=medium
 
   * source package automatically created by stdeb 0.6.0+git
   * Update Standards to 3.9.5
   * Recommends: elasticsearch
   * Adjust Description
   * Add debian/copyright
+  * [8fcb315] Add Vcs-headers
 
- -- Jan Wagner <waja@cyconet.org>  Fri, 06 Jun 2014 10:58:37 +0200
+ -- Jan Wagner <waja@cyconet.org>  Fri, 06 Jun 2014 12:27:51 +0200
