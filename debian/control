@@ -1,0 +1,23 @@
+Source: elasticsearch-curator
+Maintainer: Jan Wagner <waja@cyconet.org>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7.4.3)
+Standards-Version: 3.9.5
+
+Package: python-elasticsearch-curator
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Recommends: elasticsearch
+Description: Tending your time-series indices in Elasticsearch
+ Have time-series indices in Elasticsearch? This is the tool for you!
+ .
+ There are two branches for development - `master` and `0.6`. Master branch is
+ used to track all the changes for Elasticsearch 1.0 and beyond whereas 0.6
+ tracks Elasticsearch 0.90 and the corresponding `elasticsearch-py` version.
+ .
+ Releases with major version 1 (1.X.Y) are to be used with Elasticsearch 1.0 and
+ later, 0.6 releases are meant to work with Elasticsearch 0.90.X.
+ .
+ This package contains the master branch and should be used with 
+ Elasticsearch 1.0.
