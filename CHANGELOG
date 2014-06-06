@@ -1,0 +1,72 @@
+1.0.1 (???)
+ # General
+ - New! --show-indices command-line option #68 (untergeek)
+ - New! Shard Allocation Routing (-r) #62 (nickethier)
+ 
+ # Bug fixes
+ - Change BUILD_NUMBER to CURATOR_BUILD_NUMBER in setup.py #60 (mohabusama)
+ - Fix off-by-one error in time calculations #66 (untergeek)
+
+1.0.0 (25 Mar 2014)
+ # General
+ - compatible with elasticsearch-py 1.0 and Elasticsearch 1.0 (honzakral)
+ - Lots of tests! (honzakral)
+ - Streamline code for 1.0 ES versions (honzakral)
+ 
+ # Bug fixes
+ - Fix find_expired_indices() to not skip closed indices (honzakral)
+
+0.6.2 (18 Feb 2014)
+ # General
+ - Documentation fixes #38 (dharrigan)
+ - Add support for HTTPS URI scheme and optparse compatibility for Python 2.6 (gelim)
+ - Add elasticsearch module version checking for future compatibility checks (untergeek)
+ 
+0.6.1 (08 Feb 2014)
+ # General
+ - Added tarball versioning to setup.py (untergeek)
+ # Bugfixes
+ - Fix long_description by including README.md in MANIFEST.in (untergeek)
+ - Incorrect version number in curator.py (untergeek)
+
+0.6.0 (08 Feb 2014)
+ # General
+ - Restructured repository to a be a proper python package. (arieb)
+ - Added setup.py file. (arieb)
+ - Removed the deprecated file logstash_index_cleaner.py (arieb)
+ - Updated README.md to fit the new package, most importantly the usage 
+   and installation. (arieb)
+ - Fixes and package push to PyPI (untergeek)
+
+0.5.2 (26 Jan 2014)
+  # General
+  - Fix boolean logic determining hours or days for time selection (untergeek)
+
+0.5.1 (20 Jan 2014)
+  # General
+  - Fix can_bloom to compare numbers (HonzaKral)
+  - Switched find_expired_indices to use datetimes and timedeltas
+  - Do not try and catch unrecoverable exceptions. (HonzaKral)
+  - Future proofing the use of the elasticsearch client (i.e. work with version
+    1.0+ of Elasticsearch) (HonzaKral)
+    Needs more testing, but should work.
+  - Add tests for these scenarios (HonzaKral)
+
+0.5.0 (17 Jan 2014)
+  # General
+  - Deprecated logstash_index_cleaner.py
+    Use new 'curator.py' instead (untergeek)
+  - new script change: 'curator.py' (untergeek)
+  - new add index optimization (Lucene forceMerge) to reduce segments
+    and therefore memory usage. (untergeek)
+  - update refactor of args and several functions to streamline operation
+    and make it more readable (untergeek)
+  - update refactor further to clean up and allow immediate (and future) 
+    portability (HonzaKral)
+
+0.4.0
+  # General
+  - First version logged in CHANGELOG
+  - new --disable-bloom-days feature requires 0.90.9+
+    http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/index-modules-codec.html#bloom-postings
+    This can save a lot of heap space on cold indexes (i.e. not actively indexing documents)
