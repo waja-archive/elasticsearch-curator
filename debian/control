@@ -9,7 +9,7 @@ Vcs-Browser: http://github.com/waja/elasticsearch-curator
 
 Package: python-elasticsearch-curator
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
 Recommends: elasticsearch
 Description: Tending your time-series indices in Elasticsearch
  Have time-series indices in Elasticsearch? This is the tool for you!
